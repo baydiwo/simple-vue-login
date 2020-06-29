@@ -7,11 +7,16 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Parse from 'parse';
 
 export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  mounted() {
+    Parse.serverURL = 'https://parseapi.back4app.com';
+    Parse.initialize('r47xENJwNaVZqTwzZSC1aFaHZPSutZyqU9hu6y6i', 'NtmRJht1Sj8klN6cC1In8pDJiIQATtjSCbIggvZo');
   }
 }
 </script>
